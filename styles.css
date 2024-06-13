@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    background-image: url('https://github.com/theaayushraman/JOSAA-Analysis/blob/main/bg3.jpg?raw=true');
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    text-align: center;
+    border-radius: 15px;
+    border: 10px solid white;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+label {
+    text-align: left;
+    padding-top: 10px;
+    color: white;
+    font-size: 1.2rem;
+}
+
+input, select, button {
+    padding: 10px;
+    font-size: 1rem;
+    color: white; /* Font color white */
+    background: rgba(0, 0, 0, 0.5); /* Match the background with the container */
+    backdrop-filter: blur(30); /* Apply the same blur effect */
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Add transition for smooth effect */
+}
+
+input:hover, select:hover {
+    transform: scale(1.05); /* Scale up the element slightly */
+    background-color: rgba(0, 0, 0, 0.6); /* Slightly change background color on hover */
+    border-color: #4CAF50; /* Change border color on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect */
+}
+
+input:focus, select:focus {
+    outline: none; /* Remove default focus outline */
+    border-color: #4CAF50; /* Change border color on focus */
+    box-shadow: 0 0 10px rgba(0, 128, 0, 0.5); /* Add a shadow effect on focus */
+}
+
+button {
+    grid-column: span 2;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#results {
+    margin-top: 20px;
+    text-align: left;
+    color: white;
+}
+
+.results-heading {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.results-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.results-grid .result-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    transition: transform 0.2s;
+}
+
+.results-grid .result-item:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.results-grid .result-item:hover {
+    transform: scale(1.05);
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animate-slide-in {
+    animation: slideInFromRight 0.5s ease-in-out;
+}
+
+.credits-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    animation: slideInFromBottom 0.5s ease-in-out;
+    display: none;
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
