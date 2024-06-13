@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Rank Predictor</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>College Predictor WoHoo</h1>
+        <form id="filterForm">
+            
+            <label for="rank">Rank:</label>
+            <input type="number" id="rank" name="rank" required>
+            <label for="instituteType">Institute Type:</label>
+        <select id="instituteType" name="instituteType" required>
+            <option value="All">All</option>
+            <option value="IIT">IIT</option>
+            <option value="IIIT">IIIT</option>
+            <option value="NIT">NIT</option>
+            <option value="GFTI">GFTI</option>
+        </select>
+
+            <label for="quota">Seat Type:</label>
+            <select id="quota" name="quota" required></select>
+
+            <label for="seatType">Quota:</label>
+            <select id="seatType" name="seatType" required></select>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required></select>
+
+            <label for="roundNo">Round Number:</label>
+            <select id="roundNo" name="roundNo" required>
+                <option value="1">Round 1</option>
+                <option value="2">Round 2</option>
+                <option value="3">Round 3</option>
+                <option value="4">Round 4</option>
+                <option value="5">Round 5</option>
+                <option value="6">Round 6</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div id="results"></div>
+    </div>
+    <div id="credits" class="credits-container">
+        <p>This Website is made by Raman GG Kritarth Rayansh</p>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
