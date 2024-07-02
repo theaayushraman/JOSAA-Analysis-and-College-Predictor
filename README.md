@@ -7,3 +7,4 @@ LINK TO THE WEBSITE: https://theaayushraman.github.io/JOSAA-Analysis-and-College
 
 Also we analysed the josaa data using matplotlib libraries in python pandas and made various graphs.
 You can refer to the analysis in the jupyter notebook above.
+This project is made by Aayush raman, Gaytri Gupta, Rayansh and Kritarth Pandey.
