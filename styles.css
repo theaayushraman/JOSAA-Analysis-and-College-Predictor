@@ -64,6 +64,7 @@ input:focus, select:focus {
     outline: none; 
     border-color: #4CAF50;
     box-shadow: 0 0 10px rgba(0, 128, 0, 0.5);
+}
 
 button {
     grid-column: span 2;
