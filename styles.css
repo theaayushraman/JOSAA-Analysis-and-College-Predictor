@@ -45,26 +45,25 @@ label {
 input, select, button {
     padding: 10px;
     font-size: 1rem;
-    color: white; /* Font color white */
-    background: rgba(0, 0, 0, 0.5); /* Match the background with the container */
-    backdrop-filter: blur(200); /* Apply the same blur effect */
+    color: white; 
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(200); 
     border: 2px solid transparent;
     border-radius: 5px;
-    transition: all 0.3s ease; /* Add transition for smooth effect */
+    transition: all 0.3s ease;
 }
 
 input:hover, select:hover {
-    transform: scale(1.05); /* Scale up the element slightly */
-    background-color: rgba(0, 0, 0, 0.6); /* Slightly change background color on hover */
-    border-color: #4CAF50; /* Change border color on hover */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect */
+    transform: scale(1.05); 
+    background-color: rgba(0, 0, 0, 0.6);
+    border-color: #4CAF50;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
 }
 
 input:focus, select:focus {
-    outline: none; /* Remove default focus outline */
-    border-color: #4CAF50; /* Change border color on focus */
-    box-shadow: 0 0 10px rgba(0, 128, 0, 0.5); /* Add a shadow effect on focus */
-}
+    outline: none; 
+    border-color: #4CAF50;
+    box-shadow: 0 0 10px rgba(0, 128, 0, 0.5);
 
 button {
     grid-column: span 2;
@@ -156,25 +155,24 @@ button:hover {
     }
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
     .container {
         width: 90%;
     }
 
     form {
-        grid-template-columns: 1fr; /* Stack form elements in a single column */
+        grid-template-columns: 1fr; 
     }
 
     button {
-        grid-column: span 1; /* Button spans only one column */
+        grid-column: span 1; 
     }
 
     .results-heading, .results-grid {
-        grid-template-columns: 1fr; /* Results in a single column */
+        grid-template-columns: 1fr; 
     }
 
     .results-heading div, .results-grid .result-item {
-        font-size: 1rem; /* Adjust font size for smaller screens */
+        font-size: 1rem; 
     }
 }
